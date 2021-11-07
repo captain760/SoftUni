@@ -10,7 +10,7 @@ namespace _06._Courses
         {
             Dictionary<string, List<string>> courseNames = new Dictionary<string, List<string>>();
             string input = Console.ReadLine();
-            while (input!="end")
+            while (input != "end")
             {
                 string[] token = input.Split(" : ").ToArray();
                 string name = token[1];
@@ -25,7 +25,7 @@ namespace _06._Courses
                     students.Add(name);
                     courseNames.Add(course, students);
                 }
-                
+
                 input = Console.ReadLine();
             }
             Dictionary<string, List<string>> sortedCourses = new Dictionary<string, List<string>>();

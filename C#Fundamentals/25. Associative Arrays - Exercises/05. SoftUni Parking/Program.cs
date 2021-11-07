@@ -20,7 +20,7 @@ namespace _05._SoftUni_Parking
                 {
                     plate = input[2];
                 }
-                
+
                 if (cmd == "register")
                 {
                     if (namePlate.ContainsKey(name))

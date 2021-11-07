@@ -17,7 +17,7 @@ namespace _01._Count_Chars_in_a_String
                     {
                         chars[input[i]]++;
                     }
-                    
+
                 }
                 else
                 {
@@ -25,7 +25,7 @@ namespace _01._Count_Chars_in_a_String
                     {
                         chars.Add(input[i], 1);
                     }
-                    
+
                 }
             }
             foreach (var item in chars)

@@ -10,7 +10,7 @@ namespace _04._Orders
         {
             Dictionary<string, decimal[]> products = new Dictionary<string, decimal[]>();
             string input = Console.ReadLine();
-            while (input!="buy")
+            while (input != "buy")
             {
                 string[] token = input.Split().ToArray();
                 string name = token[0];
@@ -28,14 +28,14 @@ namespace _04._Orders
                 {
                     products.Add(name, priceQuantity);
                 }
-                
+
 
 
                 input = Console.ReadLine();
             }
             foreach (var item in products)
             {
-                
+
                 Console.WriteLine($"{item.Key} -> {(item.Value[0] * item.Value[1]):f2}");
             }
         }

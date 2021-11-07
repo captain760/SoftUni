@@ -9,19 +9,19 @@ namespace _02._A_Miner_Task
         {
             Dictionary<string, int> resourceQuantity = new Dictionary<string, int>();
             string input = Console.ReadLine();
-            while (input!="stop")
+            while (input != "stop")
             {
                 string resource = input;
                 int quantity = int.Parse(Console.ReadLine());
                 if (resourceQuantity.ContainsKey(resource))
                 {
-                    resourceQuantity[resource]+=quantity;
+                    resourceQuantity[resource] += quantity;
                 }
                 else
                 {
                     resourceQuantity.Add(resource, quantity);
                 }
-                
+
 
                 input = Console.ReadLine();
             }
