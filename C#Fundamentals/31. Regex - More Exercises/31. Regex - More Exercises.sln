@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Winning Ticket", "1. Winning Ticket\1. Winning Ticket.csproj", "{BFDEF3B6-3844-47FB-AA16-293D3615CAAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Rage Quit", "2. Rage Quit\2. Rage Quit.csproj", "{A472AA90-DD9E-4E9C-BBE5-6DE10143D1DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFDEF3B6-3844-47FB-AA16-293D3615CAAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFDEF3B6-3844-47FB-AA16-293D3615CAAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFDEF3B6-3844-47FB-AA16-293D3615CAAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFDEF3B6-3844-47FB-AA16-293D3615CAAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A472AA90-DD9E-4E9C-BBE5-6DE10143D1DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A472AA90-DD9E-4E9C-BBE5-6DE10143D1DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A472AA90-DD9E-4E9C-BBE5-6DE10143D1DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A472AA90-DD9E-4E9C-BBE5-6DE10143D1DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61B0C734-05EE-43D2-9215-26D0B28EB2C5}
+	EndGlobalSection
+EndGlobal
