@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Winning Ticket", "1. Win
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Rage Quit", "2. Rage Quit\2. Rage Quit.csproj", "{A472AA90-DD9E-4E9C-BBE5-6DE10143D1DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Post Office", "3. Post Office\3. Post Office.csproj", "{BAAB2895-8173-4072-977D-CD5726ACF15E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Santa's Secret Helper", "4. Santa's Secret Helper\4. Santa's Secret Helper.csproj", "{A44FD020-A143-4510-85BE-3284707A9BD9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{A472AA90-DD9E-4E9C-BBE5-6DE10143D1DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A472AA90-DD9E-4E9C-BBE5-6DE10143D1DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A472AA90-DD9E-4E9C-BBE5-6DE10143D1DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAAB2895-8173-4072-977D-CD5726ACF15E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAAB2895-8173-4072-977D-CD5726ACF15E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAAB2895-8173-4072-977D-CD5726ACF15E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAAB2895-8173-4072-977D-CD5726ACF15E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A44FD020-A143-4510-85BE-3284707A9BD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A44FD020-A143-4510-85BE-3284707A9BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A44FD020-A143-4510-85BE-3284707A9BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A44FD020-A143-4510-85BE-3284707A9BD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
