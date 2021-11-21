@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Destination Mapper", "0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Plant Discovery", "03. Plant Discovery\03. Plant Discovery.csproj", "{A346BE79-E611-461D-A698-12C9E69734A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Secret Chat", "01. Secret Chat\01. Secret Chat.csproj", "{335876C2-8857-43C2-9F47-FC6633FACB09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Mirror Words", "02. Mirror Words\02. Mirror Words.csproj", "{F7C80150-879E-4462-ADE4-8CCAE9CADD9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{A346BE79-E611-461D-A698-12C9E69734A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A346BE79-E611-461D-A698-12C9E69734A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A346BE79-E611-461D-A698-12C9E69734A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{335876C2-8857-43C2-9F47-FC6633FACB09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{335876C2-8857-43C2-9F47-FC6633FACB09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{335876C2-8857-43C2-9F47-FC6633FACB09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{335876C2-8857-43C2-9F47-FC6633FACB09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7C80150-879E-4462-ADE4-8CCAE9CADD9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7C80150-879E-4462-ADE4-8CCAE9CADD9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7C80150-879E-4462-ADE4-8CCAE9CADD9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7C80150-879E-4462-ADE4-8CCAE9CADD9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
