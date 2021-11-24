@@ -3,29 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. The Imitation Game", "01. The Imitation Game\01. The Imitation Game.csproj", "{C3318881-7E07-4DF6-A71C-D536A3B9C9FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. The Imitation Game", "01. The Imitation Game\01. The Imitation Game.csproj", "{C3318881-7E07-4DF6-A71C-D536A3B9C9FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Ad Astra", "02. Ad Astra\02. Ad Astra.csproj", "{F51C1401-5072-4D06-9E81-34041037AC69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Ad Astra", "02. Ad Astra\02. Ad Astra.csproj", "{F51C1401-5072-4D06-9E81-34041037AC69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. The Pianist", "03. The Pianist\03. The Pianist.csproj", "{3BF0DA1C-393D-4ADB-9469-0D8B803D858D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. The Pianist", "03. The Pianist\03. The Pianist.csproj", "{3BF0DA1C-393D-4ADB-9469-0D8B803D858D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. World Tour", "01. World Tour\01. World Tour.csproj", "{7EA8EC3B-28FB-4B40-B89C-3E539FDA2344}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. World Tour", "01. World Tour\01. World Tour.csproj", "{7EA8EC3B-28FB-4B40-B89C-3E539FDA2344}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Destination Mapper", "02. Destination Mapper\02. Destination Mapper.csproj", "{6AF1CDC6-AD40-4AFE-87EE-6999463BDC81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Destination Mapper", "02. Destination Mapper\02. Destination Mapper.csproj", "{6AF1CDC6-AD40-4AFE-87EE-6999463BDC81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Plant Discovery", "03. Plant Discovery\03. Plant Discovery.csproj", "{A346BE79-E611-461D-A698-12C9E69734A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Plant Discovery", "03. Plant Discovery\03. Plant Discovery.csproj", "{A346BE79-E611-461D-A698-12C9E69734A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Secret Chat", "01. Secret Chat\01. Secret Chat.csproj", "{335876C2-8857-43C2-9F47-FC6633FACB09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Secret Chat", "01. Secret Chat\01. Secret Chat.csproj", "{335876C2-8857-43C2-9F47-FC6633FACB09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Mirror Words", "02. Mirror Words\02. Mirror Words.csproj", "{F7C80150-879E-4462-ADE4-8CCAE9CADD9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Mirror Words", "02. Mirror Words\02. Mirror Words.csproj", "{F7C80150-879E-4462-ADE4-8CCAE9CADD9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Need for Speed III", "03. Need for Speed III\03. Need for Speed III.csproj", "{74D70326-08F3-4702-B1DC-624F62E47D74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Need for Speed III", "03. Need for Speed III\03. Need for Speed III.csproj", "{74D70326-08F3-4702-B1DC-624F62E47D74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Password Reset", "01. Password Reset\01. Password Reset.csproj", "{FB43A808-7A85-4746-B1B0-D95D4B6E8705}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Password Reset", "01. Password Reset\01. Password Reset.csproj", "{FB43A808-7A85-4746-B1B0-D95D4B6E8705}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Fancy Barcodes", "02. Fancy Barcodes\02. Fancy Barcodes.csproj", "{55FFD769-160F-4D05-A16F-247A89761944}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Fancy Barcodes", "02. Fancy Barcodes\02. Fancy Barcodes.csproj", "{55FFD769-160F-4D05-A16F-247A89761944}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Heroes of Code and Logic VII", "03. Heroes of Code and Logic VII\03. Heroes of Code and Logic VII.csproj", "{6BF48742-421D-4D87-9120-9C4EEE460EEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Heroes of Code and Logic VII", "03. Heroes of Code and Logic VII\03. Heroes of Code and Logic VII.csproj", "{6BF48742-421D-4D87-9120-9C4EEE460EEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Activation Keys", "01. Activation Keys\01. Activation Keys.csproj", "{8DB1CB7C-E611-4844-AF56-67F363BCE586}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Emoji Detector", "02. Emoji Detector\02. Emoji Detector.csproj", "{1796C0EF-F774-46F3-A61C-83319CBB52A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. P!rates", "03. P!rates\03. P!rates.csproj", "{3C9BD838-CF4F-45D6-AE49-4452EB5A0614}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +87,18 @@ Global
 		{6BF48742-421D-4D87-9120-9C4EEE460EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BF48742-421D-4D87-9120-9C4EEE460EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BF48742-421D-4D87-9120-9C4EEE460EEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DB1CB7C-E611-4844-AF56-67F363BCE586}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB1CB7C-E611-4844-AF56-67F363BCE586}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB1CB7C-E611-4844-AF56-67F363BCE586}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB1CB7C-E611-4844-AF56-67F363BCE586}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1796C0EF-F774-46F3-A61C-83319CBB52A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1796C0EF-F774-46F3-A61C-83319CBB52A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1796C0EF-F774-46F3-A61C-83319CBB52A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1796C0EF-F774-46F3-A61C-83319CBB52A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C9BD838-CF4F-45D6-AE49-4452EB5A0614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C9BD838-CF4F-45D6-AE49-4452EB5A0614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C9BD838-CF4F-45D6-AE49-4452EB5A0614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C9BD838-CF4F-45D6-AE49-4452EB5A0614}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
