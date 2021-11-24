@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
 namespace _3._Post_Office
@@ -19,57 +18,29 @@ namespace _3._Post_Office
             string capitals = caps.Groups["capts"].Value.ToString();
             MatchCollection asciiLength = Regex.Matches(second, regexSecond);
             MatchCollection words = Regex.Matches(third, regexThird);
-            int wordsCounter = 0 ;
-            //foreach (Match item in asciiLength)
-            //{
-            //    int asciiCode = int.Parse(item.Groups["ascii"].Value);
-            //    int wordLength = int.Parse(item.Groups["length"].Value);
-            //    if (capitals.Length > wordsCounter)
-            //    {
+            int wordsCounter = 0;
 
-
-            //        if (asciiCode == capitals[wordsCounter])
-            //        {
-            //            foreach (Match word in words)
-            //            {
-
-
-            //                if ((wordLength == word.Groups["words"].Value.Length - 1) && asciiCode == word.Groups["words"].Value[0])
-            //                {
-            //                    Console.WriteLine(word.Groups["words"].Value);
-            //                    wordsCounter++;
-            //                }
-            //            }
-            //        }
-
-            //    }
-            //}
-            
-                foreach (Match item in asciiLength)
+            foreach (Match item in asciiLength)
+            {
+                int asciiCode = int.Parse(item.Groups["ascii"].Value);
+                int wordLength = int.Parse(item.Groups["length"].Value);
+                if (capitals.Length > wordsCounter)
                 {
-                    int asciiCode = int.Parse(item.Groups["ascii"].Value);
-                    int wordLength = int.Parse(item.Groups["length"].Value);
-                    if (capitals.Length > wordsCounter)
+                    string currentWord = "";
+                    foreach (Match word in words)
                     {
-
-
-                        if (asciiCode == capitals[wordsCounter])
+                        if ((wordLength == word.Groups["words"].Value.Length - 1) && asciiCode == word.Groups["words"].Value[0] && word.Groups["words"].Value[0] == capitals[wordsCounter])
                         {
-                            foreach (Match word in words)
-                            {
-
-
-                                if ((wordLength == word.Groups["words"].Value.Length - 1) && asciiCode == word.Groups["words"].Value[0] && word.Groups["words"].Value[0] == capitals[wordsCounter])
-                                {
-                                    Console.WriteLine(word.Groups["words"].Value);
-                                    wordsCounter++;
-                                }
-                            }
+                            currentWord = word.Groups["words"].Value;
+                            wordsCounter++;
+                            Console.WriteLine(currentWord);
                         }
-
                     }
+                    
+
                 }
-            
+            }
+
         }
     }
 }

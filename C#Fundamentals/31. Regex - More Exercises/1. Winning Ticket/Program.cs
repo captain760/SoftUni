@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -10,7 +9,7 @@ namespace _1._Winning_Ticket
         static void Main(string[] args)
         {
             string input = Console.ReadLine();
-            
+
             string[] tickets = input.Split(new[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
             string[] trimmedInput = new string[tickets.Length];
             for (int i = 0; i < tickets.Length; i++)
@@ -20,7 +19,7 @@ namespace _1._Winning_Ticket
             }
             string regexValidation = @"[^,]{20}";
             string regexSpecialValidation = @"[$]{6,10}|[#]{6,10}|[@]{6,10}|[\^]{6,10}";
-           
+
             foreach (var ticket in trimmedInput)
             {
                 Match validTicket = Regex.Match(ticket, regexValidation);
@@ -45,7 +44,7 @@ namespace _1._Winning_Ticket
                     Match winnerLeft = Regex.Match(left.ToString(), regexSpecialValidation);
                     Match winnerRight = Regex.Match(right.ToString(), regexSpecialValidation);
 
-                    if ((winnerLeft.ToString().Contains(winnerRight.ToString()) || winnerRight.ToString().Contains(winnerLeft.ToString())) && (winnerRight.ToString()!="" && winnerLeft.ToString() != ""))
+                    if ((winnerLeft.ToString().Contains(winnerRight.ToString()) || winnerRight.ToString().Contains(winnerLeft.ToString())) && (winnerRight.ToString() != "" && winnerLeft.ToString() != ""))
                     {
                         if (winnerRight.ToString().Length == 10 && winnerLeft.ToString().Length == 10)
                         {
@@ -53,7 +52,7 @@ namespace _1._Winning_Ticket
                         }
                         else
                         {
-                            Console.WriteLine($"ticket \"{ticket}\" - {Math.Min(winnerRight.Length,winnerLeft.Length)}{winnerRight.ToString()[0]}");
+                            Console.WriteLine($"ticket \"{ticket}\" - {Math.Min(winnerRight.Length, winnerLeft.Length)}{winnerRight.ToString()[0]}");
                         }
 
                     }
@@ -62,9 +61,9 @@ namespace _1._Winning_Ticket
                         Console.WriteLine($"ticket \"{ticket}\" - no match");
                     }
                 }
-                
+
             }
-            
+
         }
     }
 }

@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Winning Ticket", "1. Winning Ticket\1. Winning Ticket.csproj", "{BFDEF3B6-3844-47FB-AA16-293D3615CAAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Winning Ticket", "1. Winning Ticket\1. Winning Ticket.csproj", "{BFDEF3B6-3844-47FB-AA16-293D3615CAAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Rage Quit", "2. Rage Quit\2. Rage Quit.csproj", "{A472AA90-DD9E-4E9C-BBE5-6DE10143D1DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Rage Quit", "2. Rage Quit\2. Rage Quit.csproj", "{A472AA90-DD9E-4E9C-BBE5-6DE10143D1DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Post Office", "3. Post Office\3. Post Office.csproj", "{BAAB2895-8173-4072-977D-CD5726ACF15E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Post Office", "3. Post Office\3. Post Office.csproj", "{BAAB2895-8173-4072-977D-CD5726ACF15E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Santa's Secret Helper", "4. Santa's Secret Helper\4. Santa's Secret Helper.csproj", "{A44FD020-A143-4510-85BE-3284707A9BD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4. Santa's Secret Helper", "4. Santa's Secret Helper\4. Santa's Secret Helper.csproj", "{A44FD020-A143-4510-85BE-3284707A9BD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Winning Ticket-Rebuild", "01. Winning Ticket-Rebuild\01. Winning Ticket-Rebuild.csproj", "{414C4485-AE5E-4D6E-90E5-09DF754A9893}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A44FD020-A143-4510-85BE-3284707A9BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A44FD020-A143-4510-85BE-3284707A9BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A44FD020-A143-4510-85BE-3284707A9BD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{414C4485-AE5E-4D6E-90E5-09DF754A9893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{414C4485-AE5E-4D6E-90E5-09DF754A9893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{414C4485-AE5E-4D6E-90E5-09DF754A9893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{414C4485-AE5E-4D6E-90E5-09DF754A9893}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

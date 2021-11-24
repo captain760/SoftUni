@@ -22,7 +22,7 @@ namespace _2._Rage_Quit
                     for (int i = 0; i < numSymbols; i++)
                     {
                         if (!usedSymmols.Contains(item.Groups["str"].Value.ToUpper()[i]))
-                        
+
                         {
                             usedSymmols.Add(item.Groups["str"].Value.ToUpper()[i]);
                         }
@@ -36,7 +36,7 @@ namespace _2._Rage_Quit
             {
                 string symbols = seq.Groups["str"].Value.ToUpper();
                 int counts = int.Parse(seq.Groups["num"].Value);
-                
+
                 for (int i = 0; i < counts; i++)
                 {
                     Console.Write(symbols);

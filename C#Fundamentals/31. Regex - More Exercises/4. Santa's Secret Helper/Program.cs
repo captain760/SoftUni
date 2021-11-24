@@ -10,7 +10,7 @@ namespace _4._Santa_s_Secret_Helper
         {
             int key = int.Parse(Console.ReadLine());
             string input = Console.ReadLine();
-            while (input !="end")
+            while (input != "end")
             {
                 StringBuilder line = new StringBuilder();
                 for (int i = 0; i < input.Length; i++)
