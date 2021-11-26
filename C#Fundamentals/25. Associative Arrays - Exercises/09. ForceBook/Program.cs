@@ -27,16 +27,9 @@ namespace _09._ForceBook
                     user = token[1];
                     if (sideUser.ContainsKey(side))
                     {
-                        foreach (var item in sideUser)
+                        if (!sideUser[side].Contains(user))
                         {
-                            if (!item.Value.Contains(user))
-                            {
-                                if (item.Key == side)
-                                {
-                                    item.Value.Add(user);
-                                }
-
-                            }
+                            sideUser[side].Add(user);
                         }
                     }
                     else
@@ -50,49 +43,30 @@ namespace _09._ForceBook
                 {
                     side = token[1];
                     user = token[0];
-
-                    bool sameSide = false;
                     foreach (var item in sideUser)
                     {
-                        if (item.Value.Contains(user) && item.Key != side)
+                        if (item.Value.Contains(user))
                         {
                             item.Value.Remove(user);
-
-                            break;
-                        }
-                        else if (item.Value.Contains(user) && item.Key == side)
-                        {
-                            sameSide = true;
                         }
                     }
-                    if (sideUser.ContainsKey(side) && !sameSide)
-                    {
-                        sideUser[side].Add(user);
-                        Console.WriteLine($"{user} joins the {side} side!");
-                    }
-                    else if (!sideUser.ContainsKey(side) && !sameSide)
+                    if (!sideUser.ContainsKey(side))
                     {
                         List<string> users = new List<string>();
-                        users.Add(user);
                         sideUser.Add(side, users);
-                        Console.WriteLine($"{user} joins the {side} side!");
                     }
-
-
+                    sideUser[side].Add(user);
+                    Console.WriteLine($"{user} joins the {side} side!");
                 }
-
-
                 input = Console.ReadLine();
             }
             Dictionary<string, List<string>> sorted = sideUser.OrderByDescending(x => x.Value.Count).ThenBy(x => x.Key).ToDictionary(x => x.Key, x => x.Value);
             foreach (var item in sorted)
             {
-                if (item.Value.Count != 0)
+                if (item.Value.Count > 0)
                 {
-
-                    item.Value.Sort();
                     Console.WriteLine($"Side: {item.Key}, Members: {item.Value.Count}");
-                    foreach (var user in item.Value)
+                    foreach (var user in item.Value.OrderBy(x =>x))
                     {
                         Console.WriteLine($"! {user}");
                     }
