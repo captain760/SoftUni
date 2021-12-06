@@ -37,7 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Santa's Cookies", "01. 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Santa's Gifts", "02. Santa's Gifts\02. Santa's Gifts.csproj", "{9248A1DB-434F-43D1-9DD0-CDF611F801E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Santa's New List", "04. Santa's New List\04. Santa's New List.csproj", "{2ABA4192-FC54-4672-BD1B-007D2528FB06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Santa's New List", "04. Santa's New List\04. Santa's New List.csproj", "{2ABA4192-FC54-4672-BD1B-007D2528FB06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04a. Santa's New List", "04a. Santa's New List\04a. Santa's New List.csproj", "{C2AF0005-00AC-4894-9F3E-B33F1EA5BE91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{2ABA4192-FC54-4672-BD1B-007D2528FB06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ABA4192-FC54-4672-BD1B-007D2528FB06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2ABA4192-FC54-4672-BD1B-007D2528FB06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2AF0005-00AC-4894-9F3E-B33F1EA5BE91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2AF0005-00AC-4894-9F3E-B33F1EA5BE91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2AF0005-00AC-4894-9F3E-B33F1EA5BE91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2AF0005-00AC-4894-9F3E-B33F1EA5BE91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
