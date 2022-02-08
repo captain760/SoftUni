@@ -2,42 +2,24 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace _02._Stack_Implementation
+namespace _03._Queue_Implementation
 {
-    public class CustomStack<T>
+    public class CustomQueue<T>
     {
         private const int InitialCapacity = 4;
         private T[] array;
         private int count;
-        public CustomStack()
+        public CustomQueue()
         {
             this.array = new T[InitialCapacity];
             this.count = 0;
         }
-        public int Count { get {return count; } }
-        //public T this[int index]
-        //{
-        //    get
-        //    {
-        //        if (index >= this.Count)
-        //        {
-        //            throw new ArgumentOutOfRangeException();
-        //        }
-        //        return array[index];
-        //    }
-        //    set
-        //    {
-        //        if (index >= this.Count)
-        //        {
-        //            throw new ArgumentOutOfRangeException();
-        //        }
-        //        array[index] = value;
-        //    }
-        //}
-        public void Push(T element)
+        public int Count =>count; 
+        
+        public void Enqueue(T element)
         {
-            
-            if (count==array.Length)
+
+            if (count == array.Length)
             {
                 ResizeUp();
             }
@@ -45,33 +27,54 @@ namespace _02._Stack_Implementation
             count++;
             return;
         }
-        public T Pop()
+        public T Dequeue()
         {
             if (count == 0)
             {
                 throw new InvalidOperationException("CustomStack is empty");
             }
-            T removedElement = array[count - 1];
+            T removedElement = array[0];
+            ShiftToLeft();
             count--;
-            if (count<array.Length/4)
+            if (count < array.Length / 4)
             {
                 Shrink();
             }
             return removedElement;
         }
+
+        private void ShiftToLeft()
+        {
+            var newArray = new T[count-1];
+            for (int i = 1; i < count; i++)
+            {
+                newArray[i - 1] = array[i];
+            }
+            array = newArray;
+        }
+
         public T Peek()
         {
-            T lastElement = array[count - 1];
-            return lastElement;
+            T firstElement = array[0];
+            return firstElement;
         }
 
         public void ForEach(Action<T> action)
-        {
-            for (int i = this.count - 1; i >= 0; i--)
+        {            
+            for (int i = 0; i < count; i++)            
             {
-                action(array[i]);
-            }            
+                 action(array[i]);   
+            }
             return;
+        }
+        public void Clear()
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = default;
+            }
+            this.count = 0;
+            this.array = new T[InitialCapacity];
         }
         private void Shrink()
         {

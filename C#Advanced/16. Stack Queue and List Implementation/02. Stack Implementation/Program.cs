@@ -15,7 +15,8 @@ namespace _02._Stack_Implementation
             MyStack.Pop();
             Console.WriteLine(MyStack.Peek());
             Console.WriteLine(MyStack.Peek());
-          
+            Console.WriteLine();
+            MyStack.ForEach(x => Console.WriteLine(x*2));
         }
     }
 }
