@@ -6,15 +6,15 @@ namespace CustomDoublyLinkedList
 {
     public class DoublyLinkedList<T>
     {
-        private class Node<T>
+        private class Node<T1>
         {
-            public Node(T value)
+            public Node(T1 value)
             {
                 this.Value = value;
             }
-            public Node<T> Next { get; set; }
-            public Node<T> Prev { get; set; }
-            public T Value { get; set; }
+            public Node<T1> Next { get; set; }
+            public Node<T1> Prev { get; set; }
+            public T1 Value { get; set; }
 
         }
         private Node<T> head;
@@ -56,7 +56,7 @@ namespace CustomDoublyLinkedList
             {
                 throw new ArgumentNullException("The list is empty");
             }
-            else if (this.Count ==1)
+            else if (this.Count == 1)
             {
                 T firstElement = this.head.Value;
                 this.head = this.tail = null;
