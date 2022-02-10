@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Drones
@@ -10,8 +11,7 @@ namespace Drones
         {
             this.Name = name;
             this.Capacity = capacity;
-            this.LandingStrip = landingStrip;
-            List<Drone> drones = new List<Drone>();
+            this.LandingStrip = landingStrip;          
         }
         public IReadOnlyCollection<Drone> Drones => drones;
         public string Name { get; set; }
@@ -20,92 +20,50 @@ namespace Drones
         public int Count { get { return Drones.Count; } }
         public string AddDrone(Drone drone)
         {
-            if (drone.Name==null || drone.Brand == null || drone.Name==string.Empty || drone.Brand == string.Empty || drone.Range<=5 || drone.Range>=15)
+            if (drone.Name==null || drone.Brand == null || drone.Range<5 || drone.Range>15)
             {
-                return"Invalid drone.";
-                
+                return"Invalid drone.";                
             }
-            else if (this.Capacity==this.Count)
+            if (Capacity==Count)
             {
-                return"Airfield is full";
-                
+                return"Airfield is full.";                
             }
-            else
-            {
                 drones.Add(drone);
-                return $"Successfully added {drone.Name} to the airfield.";
-            }
-            
+                return $"Successfully added {drone.Name} to the airfield.";           
         }
         public bool RemoveDrone(string name)
         {
-            int index = 0;
-            bool isExisting = false;
-            for (int i = 0; i < Drones.Count; i++)
+            
+            if (drones.Any(x => x.Name == name))
             {
-                if (drones[i].Name == name)
-                {
-                    isExisting = true;
-                    index = i;
-                    break;
-                }
-            }            
-            if (isExisting)
-            {
-                drones.RemoveAt(index);
+                Drone toRemove = drones.First(x => x.Name == name);
+                drones.Remove(toRemove);
                 return true;
             }
             return false;
         }
         public int RemoveDroneByBrand(string brand)
         {
-            int removedCount = 0;
-            int initCount = this.Count;
-            //for (int i = 0; i < initCount; i++)
-            //{
-            //    if (drones[i].Brand == brand)
-            //    {
-            //        drones.RemoveAt(i);
-            //        removedCount++;
-            //        i--;
-            //    }
-            //}
-            int i = 0;
-            while (i!= this.Count)
-            {
-                if (drones[i].Brand==brand)
-                {
-                    drones.RemoveAt(i);
-                    removedCount++;
-                    i--;
-                }
-                i++;
-            }
+            
+            int removedCount = drones.Count(x => x.Brand == brand);
+            drones.RemoveAll(x => x.Brand == brand);
             return removedCount;
+            
         }
         public Drone FlyDrone(string name)
-        {
-            for (int i = 0; i < this.Count; i++)
+        {           
+            if (drones.Any(x => x.Name == name))
             {
-                if (drones[i].Name == name)
-                {
-                    drones[i].Available = false;
-                    return drones[i];
-                }
+                Drone drone = drones.First(x => x.Name == name);
+                drone.Available = false;
+                return drone;
             }
             return null;
         }
         public List<Drone> FlyDronesByRange(int range)
         {
-            List<Drone> GreaterRangeDrones = new List<Drone>();
-            for (int i = 0; i < this.Count; i++)
-            {
-                if (drones[i].Range>=range)
-                {
-                    drones[i].Available = false;
-                    GreaterRangeDrones.Add(drones[i]);
-                }
-            }
+            List<Drone> GreaterRangeDrones = drones.FindAll(x => x.Range >= range);          
+            GreaterRangeDrones.Select(x => x.Available = false).ToList();            
             return GreaterRangeDrones;
         }
         public string Report()

@@ -4,26 +4,25 @@ namespace Drones
 {
     public class Drone
     {
-        private string name;
-        private string brand;
-        private int range;
-        private bool available = true;
+        
+        private bool available;
         public Drone(string name, string brand,int range)
         {
             this.Name = name;
             this.Brand = brand;
             this.Range = range;
+            this.Available = true;
         }
-        public string Name { get { return name; } set { name = value; } }
-        public string Brand { get { return brand; } set { brand = value; } }
-        public int Range { get { return range; } set { range = value; } }
+        public string Name { get; set; }
+        public string Brand { get; set; }
+        public int Range { get; set; }
         public bool Available { get { return available; } set {available = value; } }
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.AppendLine($"Drone: {name}");
-            sb.AppendLine($"Manufactured by: {brand}");
-            sb.AppendLine($"Range: {range} kilometers");
+            sb.AppendLine($"Drone: {Name}");
+            sb.AppendLine($"Manufactured by: {Brand}");
+            sb.AppendLine($"Range: {Range} kilometers");
             return sb.ToString().Trim();
         }
     }
