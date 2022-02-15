@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. ListyIterator", "01. ListyIterator\01. ListyIterator.csproj", "{2013549C-3540-4A8A-AEFD-ABCC5DF2E504}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Collection", "02. Collection\02. Collection.csproj", "{CDE7D6BB-466E-4210-B8C5-EAF67A042FCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Stack", "03. Stack\03. Stack.csproj", "{9AFCA0B3-FE96-4293-AE48-90BCD198B4B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Froggy", "04. Froggy\04. Froggy.csproj", "{0C2B02DF-C267-4B86-B23B-9462425BB63E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Comparing Objects", "05. Comparing Objects\05. Comparing Objects.csproj", "{62ABF9D3-E845-4277-86E6-DB3458AC93AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Custom Comparator", "07. Custom Comparator\07. Custom Comparator.csproj", "{F74F3425-7E64-40C0-9FCF-03E1EE8567C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Equality Logic", "06. Equality Logic\06. Equality Logic.csproj", "{C9811BE5-6D29-4BFF-8EB1-F856CD4F4E15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2013549C-3540-4A8A-AEFD-ABCC5DF2E504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2013549C-3540-4A8A-AEFD-ABCC5DF2E504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2013549C-3540-4A8A-AEFD-ABCC5DF2E504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2013549C-3540-4A8A-AEFD-ABCC5DF2E504}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDE7D6BB-466E-4210-B8C5-EAF67A042FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDE7D6BB-466E-4210-B8C5-EAF67A042FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDE7D6BB-466E-4210-B8C5-EAF67A042FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDE7D6BB-466E-4210-B8C5-EAF67A042FCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AFCA0B3-FE96-4293-AE48-90BCD198B4B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AFCA0B3-FE96-4293-AE48-90BCD198B4B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AFCA0B3-FE96-4293-AE48-90BCD198B4B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AFCA0B3-FE96-4293-AE48-90BCD198B4B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C2B02DF-C267-4B86-B23B-9462425BB63E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C2B02DF-C267-4B86-B23B-9462425BB63E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C2B02DF-C267-4B86-B23B-9462425BB63E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C2B02DF-C267-4B86-B23B-9462425BB63E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62ABF9D3-E845-4277-86E6-DB3458AC93AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62ABF9D3-E845-4277-86E6-DB3458AC93AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62ABF9D3-E845-4277-86E6-DB3458AC93AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62ABF9D3-E845-4277-86E6-DB3458AC93AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F74F3425-7E64-40C0-9FCF-03E1EE8567C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F74F3425-7E64-40C0-9FCF-03E1EE8567C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F74F3425-7E64-40C0-9FCF-03E1EE8567C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F74F3425-7E64-40C0-9FCF-03E1EE8567C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9811BE5-6D29-4BFF-8EB1-F856CD4F4E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9811BE5-6D29-4BFF-8EB1-F856CD4F4E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9811BE5-6D29-4BFF-8EB1-F856CD4F4E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9811BE5-6D29-4BFF-8EB1-F856CD4F4E15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5C09126-BCFA-45D0-ADB4-863E8556314F}
+	EndGlobalSection
+EndGlobal
