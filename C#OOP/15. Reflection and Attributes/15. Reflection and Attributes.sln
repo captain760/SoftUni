@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stealer", "01. Stealer\Stealer.csproj", "{18C73DBF-D87D-4A9C-A76C-8FFDC5E59866}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighQualityMistakes", "High Quality Mistakes\HighQualityMistakes.csproj", "{AFDAA760-0175-4E95-B772-0DEA97B1C544}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18C73DBF-D87D-4A9C-A76C-8FFDC5E59866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18C73DBF-D87D-4A9C-A76C-8FFDC5E59866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18C73DBF-D87D-4A9C-A76C-8FFDC5E59866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18C73DBF-D87D-4A9C-A76C-8FFDC5E59866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFDAA760-0175-4E95-B772-0DEA97B1C544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFDAA760-0175-4E95-B772-0DEA97B1C544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFDAA760-0175-4E95-B772-0DEA97B1C544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFDAA760-0175-4E95-B772-0DEA97B1C544}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDF4AA73-2780-40B0-B44E-99503230D350}
+	EndGlobalSection
+EndGlobal
