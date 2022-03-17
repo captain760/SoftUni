@@ -6,37 +6,38 @@ namespace P03.DetailPrinter
 {
     public class DetailsPrinter
     {
-        private IList<Employee> employees;
+        private IList<IEmployee> employees;
 
-        public DetailsPrinter(IList<Employee> employees)
+        public DetailsPrinter(IList<IEmployee> employees)
         {
             this.employees = employees;
         }
 
         public void PrintDetails()
         {
-            foreach (Employee employee in this.employees)
+            foreach (IEmployee employee in this.employees)
             {
-                if (employee is Manager)
-                {
-                    this.PrintManager((Manager)employee);
-                }
-                else
-                {
-                    this.PrintEmployee(employee);
-                }
+                //if (employee is Manager)
+                //{
+                //    this.PrintManager((Manager)employee);
+                //}
+                //else
+                //{
+                //    this.PrintEmployee(employee);
+                //}
+                this.PrintEmployee(employee);
             }
         }
 
-        private void PrintEmployee(Employee employee)
+        private void PrintEmployee(IEmployee employee)
         {
-            Console.WriteLine(employee.Name);
+            employee.Print();
         }
 
-        private void PrintManager(Manager manager)
-        {
-            Console.WriteLine(manager.Name);
-            Console.WriteLine(string.Join(Environment.NewLine, manager.Documents));
-        }
+        //private void PrintManager(Manager manager)
+        //{
+        //    Console.WriteLine(manager.Name);
+        //    Console.WriteLine(string.Join(Environment.NewLine, manager.Documents));
+        //}
     }
 }

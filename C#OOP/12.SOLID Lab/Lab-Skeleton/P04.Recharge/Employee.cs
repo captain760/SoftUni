@@ -8,15 +8,20 @@
         {
         }
 
-        public override void Sleep()
+        public void Sleep()
         {
-            // sleep...
+            Console.WriteLine("Sleeping 8hrs...");
         }
 
-        public override void Recharge()
+        public override void Work(int hours)
         {
-            throw new InvalidOperationException("Employees cannot recharge");
+            this.WorkingHours += hours;
         }
-        
+
+        //public override void Recharge()
+        //{
+        //    throw new InvalidOperationException("Employees cannot recharge");
+        //}
+
     }
 }

@@ -4,11 +4,11 @@ using System.Text;
 
 namespace P02.Graphic_Editor
 {
-    public class Rectangle : IShape
+    class Triangle : IShape
     {
         public void Draw()
         {
-            Console.WriteLine("I'm Rectagle");
+            Console.WriteLine("I'm Triangle");
         }
     }
 }
