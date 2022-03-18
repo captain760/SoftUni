@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandPattern", "CommPatt\CommandPattern.csproj", "{01118692-D944-4DFF-804A-7752327E2DD2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationAttributes", "ValidationAttributes\ValidationAttributes.csproj", "{9810F067-8CB9-472D-9435-97CDA0E8933C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01118692-D944-4DFF-804A-7752327E2DD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01118692-D944-4DFF-804A-7752327E2DD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01118692-D944-4DFF-804A-7752327E2DD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01118692-D944-4DFF-804A-7752327E2DD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9810F067-8CB9-472D-9435-97CDA0E8933C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9810F067-8CB9-472D-9435-97CDA0E8933C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9810F067-8CB9-472D-9435-97CDA0E8933C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9810F067-8CB9-472D-9435-97CDA0E8933C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAEDE641-0A1F-4C1C-968C-CF4EE4EB020A}
+	EndGlobalSection
+EndGlobal
