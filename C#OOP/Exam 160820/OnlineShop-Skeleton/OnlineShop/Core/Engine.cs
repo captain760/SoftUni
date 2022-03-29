@@ -1,5 +1,5 @@
-﻿using System;
-using OnlineShop.IO;
+﻿using OnlineShop.IO;
+using System;
 
 namespace OnlineShop.Core
 {

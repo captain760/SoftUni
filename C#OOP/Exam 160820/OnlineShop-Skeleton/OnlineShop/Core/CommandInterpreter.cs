@@ -1,14 +1,14 @@
-﻿using System;
-using System.Linq;
-using OnlineShop.Common.Constants;
+﻿using OnlineShop.Common.Constants;
 using OnlineShop.Common.Enums;
+using System;
+using System.Linq;
 
 namespace OnlineShop.Core
 {
     public class CommandInterpreter : ICommandInterpreter
     {
         public string ExecuteCommand(string[] data, IController controller)
-        {
+        {            
             string command = data[0];
 
             if (!Enum.TryParse(command, out CommandType commandType))
