@@ -45,7 +45,7 @@ namespace Bakery.Core
             {
                 bakedFoods.Add(new Bread(name, price));
             }
-            if (type == "Cake")
+            else if (type == "Cake")
             {
                 bakedFoods.Add(new Cake(name, price));
             }
@@ -85,12 +85,14 @@ namespace Bakery.Core
         public string LeaveTable(int tableNumber)
         {
             ITable table = tables.FirstOrDefault(x => x.TableNumber == tableNumber);
-            decimal tableBill = 0m;
-            tableBill = table.GetBill()+table.Price;
+
+            decimal tableBill = table.GetBill();
             totalIncome += tableBill;
             table.Clear();
-            return $"Table: {tableNumber}\r\n" +
-                   $"Bill: {tableBill:f2}";
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"Table: {tableNumber}");
+            sb.AppendLine($"Bill: {tableBill:f2}");
+            return sb.ToString().TrimEnd();
 
         }
 

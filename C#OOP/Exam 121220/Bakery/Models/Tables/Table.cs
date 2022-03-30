@@ -22,7 +22,7 @@ namespace Bakery.Models.Tables
             TableNumber = tableNumber;
             Capacity = capacity;
             PricePerPerson = pricePerPerson;           
-            IsReserved = false;
+            //IsReserved = false;
         }
 
     
@@ -68,7 +68,7 @@ namespace Bakery.Models.Tables
             {
                 return PricePerPerson * NumberOfPeople;
             }
-
+             
         }
 
         public void Clear()
@@ -90,17 +90,19 @@ namespace Bakery.Models.Tables
             {
                 totalBill += drink.Price;
             }
-            //totalBill += this.Price;
+            totalBill += this.Price;
             return totalBill;
         }
      
 
         public string GetFreeTableInfo()
         {
-            return $"Table: {TableNumber}\r\n" +                 
-                   $"Type: {this.GetType().Name}\r\n"+
-                   $"Capacity: {Capacity}\r\n" +
-                   $"Price per Person: {PricePerPerson}";
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"Table: {TableNumber}");
+            sb.AppendLine($"Type: {this.GetType().Name}");
+            sb.AppendLine($"Capacity: {Capacity}");
+            sb.AppendLine($"Price per Person: {PricePerPerson}");
+            return sb.ToString().TrimEnd();
 
         }
 

@@ -60,7 +60,7 @@ namespace Bakery.Models.BakedFoods
         }
         public override string ToString()
         {
-            return $"{Name}: {Portion}g - {Price:f2}";
+            return $"{Name}: {Portion}g - {Price:F2}";
         }
     }
 }

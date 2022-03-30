@@ -74,7 +74,7 @@ namespace Bakery.Models.Drinks
         }
         public override string ToString()
         {
-            return $"{Name} {Brand} - {Portion}ml - {Price:f2}lv";
+            return $"{Name} {Brand} - {Portion}ml - {Price:F2}lv";
         }
 
         

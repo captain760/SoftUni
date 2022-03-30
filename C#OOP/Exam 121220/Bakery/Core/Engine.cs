@@ -96,16 +96,16 @@
                     }
 
                     writer.WriteLine(result);
-                }
+            }
                 catch (ArgumentNullException ane)
-                {
-                    writer.WriteLine(ane.Message);
-                }
-                catch (ArgumentException ae)
-                {
-                    writer.WriteLine(ae.Message);
-                }
-                input = reader.ReadLine();
+            {
+                writer.WriteLine(ane.Message);
+            }
+            catch (ArgumentException ae)
+            {
+                writer.WriteLine(ae.Message);
+            }
+            input = reader.ReadLine();
             }
         }
     }
