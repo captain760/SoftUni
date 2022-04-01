@@ -24,7 +24,7 @@
         public const string InvalidItem = "Invalid item \"{0}\"!";
 
         public const string CharacterNotInParty = "Character {0} not found!";
-        
+
         public const string ItemPoolEmpty = "No items left in pool!";
 
         public const string AttackFail = "{0} cannot attack!";

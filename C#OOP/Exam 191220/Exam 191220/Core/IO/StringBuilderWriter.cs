@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
+﻿using System.Text;
 using WarCroft.Core.IO.Contracts;
 
 namespace WarCroft.Core.IO

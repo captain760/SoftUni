@@ -5,11 +5,11 @@
     using System.Linq;
 
     public class Stage
-	{
+    {
         private const string CanNotBeNullMessage = "Can not be null!";
 
         private readonly List<Song> Songs;
-		private readonly List<Performer> performers;
+        private readonly List<Performer> performers;
 
         public Stage()
         {
@@ -79,7 +79,7 @@
         {
             var song = this.Songs.FirstOrDefault(p => p.Name == songName);
 
-            if (song==null)
+            if (song == null)
             {
                 throw new ArgumentException("There is no song with this name.");
             }
