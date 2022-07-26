@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20220723191020_InnitialSetup.cs" />
+    <Compile Remove="Migrations\20220723191020_InnitialSetup.Designer.cs" />
+    <Compile Remove="Migrations\20220723191727_CompositKeyFix.cs" />
+    <Compile Remove="Migrations\20220723191727_CompositKeyFix.Designer.cs" />
+    <Compile Remove="Migrations\20220723192647_InitialSetup.cs" />
+    <Compile Remove="Migrations\20220723192647_InitialSetup.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.27" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.27">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.27" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.27">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\P01_StudentSystem.Data.Models\P01_StudentSystem.Data.Models.csproj" />
+  </ItemGroup>
+
+</Project>
