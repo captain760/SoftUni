@@ -6,6 +6,7 @@ using RealEstates.Services;
 using RealEstates.Services.Models;
 using System.IO;
 using System.Text;
+using System.Xml;
 using System.Xml.Serialization;
 
 namespace RealEstates.ConsoleApplication
@@ -91,8 +92,8 @@ namespace RealEstates.ConsoleApplication
             var xmlSerializer = new XmlSerializer(typeof(PropertyInfoFullData[]));
             
             var stringWriter = new StringWriter();
-            
-            xmlSerializer.Serialize(stringWriter,props);
+           var xmlWriter = XmlWriter.Create(stringWriter, new XmlWriterSettings { Indent = true });
+            xmlSerializer.Serialize(xmlWriter,props);
 
             Console.WriteLine(stringWriter.ToString().TrimEnd());
 

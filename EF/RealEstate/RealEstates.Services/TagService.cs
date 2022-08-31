@@ -64,6 +64,7 @@ namespace RealEstates.Services
 
                 // Big - Small
                 var avgSize = this.propertiesService.AverageSize(prop.DistrictId);
+                
                 if (prop.Size > avgSize)
                 {
                     var tag = GetTag("Big");

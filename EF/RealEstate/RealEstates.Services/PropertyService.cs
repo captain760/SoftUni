@@ -35,7 +35,7 @@ namespace RealEstates.Services
             if (dbDistrict == null)
             {
                 dbDistrict = new District { Name = district };
-                //dbContext.Districts.Add(dbDistrict);                
+                            
             }
             property.District = dbDistrict;
 
@@ -43,7 +43,7 @@ namespace RealEstates.Services
             if (dbPropType == null)
             {
                 dbPropType = new PropertyType { Name = propertyType };
-                //dbContext.PropertyTypes.Add(dbPropType);
+                
             }
             property.PropertyType = dbPropType;
 
@@ -51,7 +51,7 @@ namespace RealEstates.Services
             if (dbBuildType == null)
             {
                 dbBuildType = new BuildingType { Name = buildingType };
-                //dbContext.BuildingTypes.Add(dbBuildType);
+                
             }
             property.BuildingType = dbBuildType;
 

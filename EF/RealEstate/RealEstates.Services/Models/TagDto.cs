@@ -7,10 +7,10 @@ using System.Xml.Serialization;
 
 namespace RealEstates.Services.Models
 {
-    [XmlType("Tag")]
+   [XmlType("Tag")]
     public class TagDto
     {
-        [XmlElement("TagName")]
+        [XmlAttribute("Name")]
         public string Name { get; set; }
     }
 }

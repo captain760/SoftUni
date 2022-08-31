@@ -9,8 +9,7 @@ namespace RealEstates.Services.Models
 {
     [XmlType("Property")]
     public class PropertyInfoFullData
-    {
-       
+    {       
         [XmlAttribute("Id")]
         public int Id { get; set; }
         [XmlElement("DistrictName")]
