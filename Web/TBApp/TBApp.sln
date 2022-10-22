@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TBApp", "TBApp\TBApp.csproj", "{A0B70B85-A26D-449C-89E4-9D99F063355E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0B70B85-A26D-449C-89E4-9D99F063355E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0B70B85-A26D-449C-89E4-9D99F063355E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0B70B85-A26D-449C-89E4-9D99F063355E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0B70B85-A26D-449C-89E4-9D99F063355E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A43693D-CD43-415B-AF15-16D10E8D2B30}
+	EndGlobalSection
+EndGlobal
