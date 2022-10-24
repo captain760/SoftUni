@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WoodMasters2</name>
+    </assembly>
+    <members>
+        <member name="T:WoodMasters2.Controllers.AccountController">
+            <summary>
+            Controller for the Accounts of the users
+            </summary>
+        </member>
+        <member name="T:WoodMasters2.Controllers.BaseController">
+            <summary>
+            Base controller inherited by all other controllers
+            </summary>
+        </member>
+        <member name="T:WoodMasters2.Controllers.HomeController">
+            <summary>
+            Home controller for Logged-Out users
+            </summary>
+        </member>
+        <member name="M:WoodMasters2.Controllers.HomeController.#ctor(Microsoft.Extensions.Logging.ILogger{WoodMasters2.Controllers.HomeController})">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:WoodMasters2.Controllers.HomeController.Index">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WoodMasters2.Controllers.HomeController.Privacy">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WoodMasters2.Controllers.HomeController.Error">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WoodMasters2.Models.ErrorViewModel">
+            <summary>
+            Errors model
+            </summary>
+        </member>
+        <member name="P:WoodMasters2.Models.ErrorViewModel.RequestId">
+            <summary>
+            Request Id of the error
+            </summary>
+        </member>
+        <member name="P:WoodMasters2.Models.ErrorViewModel.ShowRequestId">
+            <summary>
+            Request Id to be available when not Null or Empty
+            </summary>
+        </member>
+    </members>
+</doc>
