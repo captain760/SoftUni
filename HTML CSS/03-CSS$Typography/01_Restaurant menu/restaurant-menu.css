@@ -1,0 +1,48 @@
+/* •	<body>:
+o	Align the text to the center
+•	<h1>:
+o	Fonts: SentinelA, SentinelB, Georgia, TimesNewRoman, Times
+o	Generic Font: serif
+o	Font weight 400
+o	Height of the line: 1.15
+o	Text color: #747474
+•	<span>:
+o	Fonts: GraphikSemiboldWeb, OpenSans, HelveticaNeue, Helvetica, Arial
+o	Generic Font: sans-serif
+o	Font style: oblique
+o	Font weight: 600
+o	Font size: 16px
+o	Height of the line: 1.46
+o	Text color: #5c5a5a
+•	<p>:
+o	Fonts: GraphikRegularWeb, HelveticaNeue, Helvetica, Arial
+o	Generic Font: sans-serif
+o	Font weight 400
+o	Font size: 16px
+o	Height of the line: 1.46
+o	Text color: #5c5a5a */
+    body{
+    text-align: center;
+    }
+    h1{
+        font-family: Sentinel A, Sentinel B, Georgia, Times New Roman, Times, serif;
+        
+        font-weight: 400;
+        line-height: 1.15;
+        color: #747474;
+    }
+    span{
+        font-family: Graphik Semibold Web, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-style: oblique;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.46;
+        color: #5c5a5a;
+    }
+    p{
+        font-family: Graphik Regular Web, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.46;
+        color: #5c5a5a;
+    }
