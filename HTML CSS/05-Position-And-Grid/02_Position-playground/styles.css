@@ -1,0 +1,29 @@
+@import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
+.card{
+    display: block;
+    position: relative;
+    height: 50vh;
+}
+.card .container{
+    position: absolute;
+    top:50%;
+    left:50%;
+transform: translate(-50%, -50%);
+}
+.card img{
+    width: 200px;
+}
+.card:first-child {
+        background: linear-gradient(90deg, rgb(5,97,129) 0%, rgb(50, 201, 151) 100%);
+    
+}
+.card:last-child {
+       background: linear-gradient(90deg, rgb(179, 47, 146) 0%, rgb(236,146,44) 100%);
+    
+}
+.icon{
+    color: white;
+    position: absolute;
+    right:5px;
+    bottom:10px;
+}

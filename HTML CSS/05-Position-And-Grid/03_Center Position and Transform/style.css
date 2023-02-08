@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(238, 238, 238);
+}
+.card{
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 10px rgba(0,0,0, 0.2); 
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    min-width: 150px;
+    max-width: 400px;
+}
+.card .pic{
+    height: 200px;
+    position: relative;
+    
+}
+.card .txt{
+    height: 150px;
+    padding: 10px 20px;
+}
+.card .txt__button{
+    background-color: rgb(0, 153, 0) ;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    float: right;
+}
+h3{
+    font-family: Georgia, serif;
+    font-size: 1em;
+}
+img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}

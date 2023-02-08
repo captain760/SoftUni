@@ -1,0 +1,8 @@
+h1{
+    position: absolute;
+    top: 60px;
+    left: 180px;
+    color: antiquewhite;
+    text-shadow: 1px 1px 20px black;
+    /* text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;  neon:)*/
+}
