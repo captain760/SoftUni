@@ -1,0 +1,51 @@
+html{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    max-width: 65vw;
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+section.week{
+    flex-wrap: wrap;
+
+}
+span{
+    border: 1px solid black;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    width: 20%;
+    font-size: 14px;
+}
+section.notes span{
+    width: 100%;
+    flex-grow: 1;
+    padding: 20px;
+}
+section.notes{
+    
+    flex-direction: column;
+  
+    
+    
+}
+span:nth-child(1){
+    width: 100%;
+}
+span:nth-child(7){
+    width: 100%;
+}
+span:nth-child(8){
+    width: 50%;
+}
+span:nth-child(9){
+    width: 50%;
+}

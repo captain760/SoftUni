@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(238, 238, 238);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 100px;
+}
+.cards-layout{
+    display: flex;
+    gap: 10px
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: white;
+    max-width: 215px;
+    overflow: hidden;
+}
+section{
+    padding: 16px;
+    
+}
+footer{
+   margin-top: auto;
+    padding: 16px;
+    
+    border-top: 1px solid grey;
+}
+.flex{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.masonry{
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 2000px;
+    width: 100%;
+}
+img{
+    width: 100%;
+}
+h2{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

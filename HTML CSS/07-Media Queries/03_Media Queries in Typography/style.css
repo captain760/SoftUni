@@ -1,0 +1,105 @@
+.page{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+body{
+    background-color: rgb(238, 238, 238);
+    padding: 50px;
+}
+img{
+    background-color: rgb(255,255,255);
+    padding: 6px;
+    border: 3px solid black;
+    
+    }
+blockquote{
+        font-family: Georgia, serif;
+    }
+a{
+    color: rgb(0,153,0);
+    text-decoration: none;
+}
+h1,
+h2{
+    font-family: Georgia, serif;
+    margin-bottom: 15px;
+}
+header{
+    width: 100%;
+    border-bottom: 3px solid black;
+    margin-bottom: 20px;
+}
+main{
+    width: 80%;
+}
+aside{
+    width: 20%;
+    padding-left: 50px;
+}
+h1{
+    text-transform: uppercase;
+}
+.frame1{
+    margin-left: 20px;
+    float: right;
+}
+.frame2{
+    float: left;
+    margin-right: 20px;
+}
+section{
+    margin-bottom: 50px;
+}
+p{
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+blockquote{
+    float:right;
+    border-left: 2px solid lightgray;
+    padding-left: 20px;
+    margin-left: 20px;
+    width: 40%;
+    font-style: italic;
+}
+#author{
+    text-align: right;
+}
+@media screen and (max-width: 1800px){
+    p{
+        font-size: 21px;
+    }
+    
+}
+@media screen and (max-width: 1300px){
+    p{
+        font-size: 18px;
+    }
+    
+}
+@media screen and (max-width: 800px){
+    p{
+        font-size: 16px;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    p{
+        font-size: 14px;
+    }
+    
+}
+@media screen and (max-width: 500px){
+    p{
+        font-size: 12px;
+    }
+    .frame1,
+    .frame2,
+    blockquote{
+        float: none;
+    }
+    blockquote{
+        width: 100%;
+    }
+}
