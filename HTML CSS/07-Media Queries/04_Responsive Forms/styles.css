@@ -1,0 +1,63 @@
+@import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
+fieldset{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    width: 100vw;
+    border: 2px solid lightgrey;
+    margin: auto;
+    max-width: 500px;
+
+}
+fieldset>legend{
+    background-color: white;
+    padding: 6px 12px;
+    border: 2px solid lightgrey;
+    width: 30%;
+   margin-left: -14px;
+}
+p>label{
+    font-weight: bold;
+    margin-left: 20px;
+    
+}
+p{
+    margin: 20px;
+    display: inline-block;
+}
+div.textfield{
+    display: inline-block;
+}
+p>input{
+    width: 75%;
+}
+i{
+    position: absolute;
+    padding: 6px;
+}
+#btn{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 4px 12px;
+}
+@media screen and (max-width:576px){
+    fieldset{
+        width: 80vw;
+    }
+    p{
+        margin-left: 18px;
+       
+        display: block;
+    }
+    p>label{
+        
+        margin-left: 0px;
+        
+    }
+    div.textfield{
+        display: block;
+        padding-left: 18px;
+    }
+}

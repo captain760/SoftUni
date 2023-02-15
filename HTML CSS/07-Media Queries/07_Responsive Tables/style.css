@@ -1,0 +1,19 @@
+table{
+   width: 95%;
+    margin: 20px;
+    table-layout: fixed;
+}
+th{
+    background-color: black;
+    color: white;
+}
+tr:nth-child(even){
+    background-color: lightgrey;
+}
+table, th, td {
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+  }
+  @media screen and (max-width:250px){
+    
+  }
