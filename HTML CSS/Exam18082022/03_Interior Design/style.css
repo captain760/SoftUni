@@ -1,0 +1,161 @@
+@import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+*{
+    font-family: Roboto, serif;
+}
+h1,
+h2{
+    font-family: "Abril Fatface", serif;
+}
+body{
+    padding: 0 10%;
+}
+.hero{
+    width: 1300px;
+    height: 1000px;
+    background-image: url(image/image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+position: relative;
+}
+.hero>.title_container{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 25%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1%;
+    box-shadow: rgba(97, 96, 96, 0.323) 1.95px 1.95px 2.6px;
+    border: 2px solid rgb(177, 175, 175);
+}
+.hero>.quote{
+    position: absolute;
+    top: 25%;
+    right: 20px;
+    width: 25%;
+    height: 35 %;
+    display: flex;
+    flex-direction: column;
+    padding: 1% 1%;
+    box-shadow: rgba(97, 96, 96, 0.323) 1.95px 1.95px 2.6px;
+    border: 2px solid rgba(177, 175, 175, 0.3);
+    color: white;
+    background-color: rgb(157, 147, 140); 
+    background-image: linear-gradient(to right,rgb(157, 147, 140), rgb(202,199,198)); 
+}
+.quote_mark{
+    margin-top: 30px;
+    font-size: 48px;
+    color: gray;
+    line-height: 0.5;
+}
+.quote>p{
+    text-align: right;
+}
+.hero>.title_container>.title{
+    width: 70%;
+    
+}
+h1{
+    font-size: 36px;
+}
+.title>hr{
+    border: 1px solid white;
+}
+main{
+    width: 1300px;
+    height: 700px;
+    display: flex;
+}
+aside{
+    width: 60%;
+    background-color: rgba(157, 147, 140, 0.7);
+}
+main>.desc{
+    background-color: rgba(202,199,198, 0.35);
+}
+span{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+li>span{
+    margin-left: 10px;
+}
+div>span{
+    font-style: italic;
+}
+.container{
+    margin-top: 3%;
+}
+.container>ul>li{
+    padding-bottom: 2%;
+}
+.services{
+    padding: 5%;
+}
+h2{
+    text-transform: uppercase;
+    
+}
+.contact_title, 
+.contact_details, 
+.contact_button{
+    padding-left: 5%;
+}
+.contact>hr{
+    border: 1px solid grey;
+}
+.contact_details{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 3%;
+    padding-left: 5%;
+}
+.contact_details>div{
+    padding-right: 15px;
+}
+.contact_button>input{
+    background-color: rgb(186, 177, 173);
+    color: white;
+    border: 1px solid rgb(186, 177, 173);
+    padding: 8px;
+    border-radius: 4px;
+    width: 35%;
+    font-size: 12px;
+    margin-right: 10px;
+}
+button{
+    background-color: rgb(103, 120, 77);
+    border: 1px solid rgb(103, 120, 77);
+    border-radius: 4px;
+    color: white;
+    padding: 8px;
+    font-size: 12px;
+}
+.data{
+    color: white;
+    font-size: 82px;
+    font-weight: 100;
+    line-height: 1.1;
+}
+.data_desc{
+    text-transform: uppercase;
+    font-size: 22px;
+}
+aside>ul>li{
+    padding: 20px;
+    
+}
+aside>ul{
+    height: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

@@ -1,0 +1,82 @@
+body{
+    background-image: url(images/background.png);
+    background-color: pink;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Mulish;
+    font-size: 12px;
+}
+
+.card{
+    background-image: url(images/form-background.png);
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45%;
+    height: 55%;    
+    border-radius: 16px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;     
+    width: 50%;   
+    
+}
+.card>.form>h2{
+    font-size: 18px;
+    font-stretch: extra-expanded;
+    text-align: center;
+    
+    padding-bottom: 20px;
+}   
+.name{
+    display: flex;
+    justify-content: space-between;       
+    flex:1 1 50%;   
+    gap: 10px;
+    
+}
+.input_group{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    margin-bottom: 10px;
+    flex: 1 1 auto;
+}
+input{
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    
+}
+label{
+    font-size: 10px;
+    
+}
+.check{
+    display: flex;
+    align-items:center;
+    
+    margin-bottom: 10px;
+}
+button{
+    border-radius: 20px;
+    border: 1px solid rgb(161, 29, 29);
+    background-color: rgb(161, 29, 29);
+    color: white;
+    font-size: 10px;
+    padding: 4px 18px;
+    max-width:fit-content;
+    align-self: center;
+}
