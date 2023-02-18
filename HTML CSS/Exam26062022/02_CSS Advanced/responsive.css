@@ -1,0 +1,68 @@
+@media screen and (max-width:600px){
+    * {
+        overflow-x: hidden;
+    }
+    .left-to-right:first-child {
+        height: 550px;
+        padding: 25px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main .left-to-right article {      
+        padding: 15px 0px 15px 0px;
+        border-radius: 20%;       
+    }
+    header h1{
+        font-size: 32px;
+    }
+    header p{
+        text-align: center;
+    }
+    p {
+        text-align: left;
+        padding: 0 40px;
+    }
+    button{
+        display: none;
+    }
+    main section:nth-child(2),
+    main section:nth-child(4) {
+        
+        flex-direction: column;
+        
+    }   
+    main section:nth-child(2) h1{
+   padding-left: 40px;
+}
+main section:nth-child(2) p{
+    padding-left: 40px;
+    text-align: left;
+ }
+ main section:nth-child(3) article {
+    height: 60%;
+    
+}
+ main section:nth-child(4) article {
+    display: flex;
+    flex-direction: column;
+   padding: 0 20%;
+    justify-content: center;
+    margin: 0;
+    
+}
+ form {
+    width: 100%;
+    
+}
+section form label input,
+section form textarea {
+    
+    width: 100%;
+}
+form label:nth-child(4){
+    display: flex;
+    justify-content: center;
+    
+}
+}

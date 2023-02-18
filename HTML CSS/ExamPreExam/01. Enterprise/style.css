@@ -1,0 +1,62 @@
+/* 
+lilav - #7775fc
+lightgray - #f6f8f9
+darkgrey -#657079
+black -#273340
+*/
+
+.container{
+    max-width: 80vw;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    gap:20%;
+    background-color:#f6f8f9 ;
+    margin: 50px auto;
+}
+.info{
+padding: 5% 5% ;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+h1{
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: 100;
+} 
+h4{
+   
+    margin-bottom: 15px;
+}
+h1, h4{
+    color:#273340 ;
+}
+p{
+
+    color: #657079;
+    font-size: 24px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+.btn{
+    display: flex;
+    gap: 12px;   
+}
+.button{
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid #273340;
+    padding: 8px 35px;
+    font-size: 20px;
+}
+.prime{    
+    background-color: #7775fc;
+    border: 1px solid #7775fc;
+    color: white;
+}
+
+img{
+    padding-right: 70px;
+    padding-top: 120px;
+}

@@ -1,0 +1,78 @@
+@media  screen and (max-width:600px){
+    
+.hero img {
+    display: none;
+}
+#home nav{   
+    justify-content: center;
+}
+#home h1{
+    margin-top: 80px;
+}
+#home a{
+    margin-right: 0;
+}
+.hero .container{
+    text-align: center;
+}
+.container p{
+    padding: 0 10px;
+}
+.hero-btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.hero-btns a:first-child{
+    padding: 17px 100px;
+}
+#about-us h2{
+    padding: 0 50px;
+    text-align: center;
+}
+.side-img img {
+   left:45px
+}
+.side2-img img {
+    top: 1580px;
+    right: 50px;
+}
+.col-sm-6 {
+    flex:1;
+    max-width: 100%;
+    padding: 50px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    }
+.service-box{
+    padding-top:20px ;
+}
+.col-sm-12{
+    text-align: center;
+
+}
+.col-sm-12>h5{
+    margin-top: 80px;
+}
+.col-sm-12>p{
+    font-size: 1.38rem;
+}
+#contact-us .col-12{
+    text-align: center;
+}
+#contact-us .row:last-child div:last-child{
+    display: none;
+}
+footer h3{
+    padding: 0 50px;
+}
+.contact-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer h6{
+    padding-bottom: 15px;
+}
+}
