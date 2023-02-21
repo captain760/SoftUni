@@ -1,0 +1,12 @@
+#cf6_image {
+    margin:0 auto;
+    width:450px;
+    height:281px;
+    transition: background-image 1s ease-in-out;
+    background-image:url("celebrity.jpg");
+    background-size: cover;
+  }
+  
+  #cf6_image:hover {
+    background-image:url("tv-show.jpg");
+  }
