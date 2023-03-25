@@ -48,7 +48,7 @@ function generateElement(type, content, parentNode, id, classes, attributes) {
   const element = document.createElement(type);
   if (content && type === 'input') {
     element.value = content;
-  }
+  } 
   if (content && type !== 'input') {
     element.textContent = content;
   }
