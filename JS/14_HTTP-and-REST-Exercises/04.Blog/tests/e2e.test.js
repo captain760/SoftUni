@@ -106,6 +106,7 @@ describe('E2E tests', function () {
       const post = await page.$$eval(`#post-title`, (t) =>
         t.map((s) => s.textContent)
       );
+      
       expect(post[0]).to.equal(data[0].title);
     });
 
