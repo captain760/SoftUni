@@ -102,11 +102,13 @@ describe('E2E tests', function () {
 
       await page.waitForSelector('#btnViewPost');
       await page.click('text=View');
-
+      
+      const p = await page.$$eval(`#post-title`, (t) =>t);
+      console.log(p);
       const post = await page.$$eval(`#post-title`, (t) =>
         t.map((s) => s.textContent)
       );
-      
+      console.log(post);
       expect(post[0]).to.equal(data[0].title);
     });
 
@@ -125,7 +127,8 @@ describe('E2E tests', function () {
 
       await page.waitForSelector('#btnViewPost');
       await page.click('text=View');
-
+      const d = await page.$$eval(`#post-body`, (t) => t);
+      
       const post = await page.$$eval(`#post-body`, (t) =>
         t.map((s) => s.textContent)
       );

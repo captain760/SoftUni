@@ -11,14 +11,8 @@ function attachEvents() {
    async function addPost() {
     
     let res = await fetch(BASE_URL+'posts')
-        .then( res =>{
-            if (!res.ok){throw(res.status)}
-            return res.json();
-        })
-        .catch(e=>{
-            console.log(`Error${e.status}: ${e.message}`)
-        })
-        let data = Object.values(res)
+        let res2 = await res.json();
+        let data = Object.values(res2)
         for (const obj of data) {         
           let opt = document.createElement('option');
           opt.value = obj.id;
@@ -29,22 +23,16 @@ function attachEvents() {
    btnViewPost.addEventListener('click', viewPost);
 
    async function viewPost(){    
-   let post = await fetch(BASE_URL+'comments')
-    .then( res =>{
-        if (!res.ok){throw(res.status)}
-        return res.json();
-    })
-    .catch(e=>{
-        console.log(`Error${e.status}: ${e.message}`)
-    })
-        let data = Object.values(post)
+        let post = await fetch(BASE_URL+'comments')
+        let res = await post.json();
+        let data = Object.values(res);
         
         let selKey = sel.value;       
         let selObj = await getPostInfo(selKey);
         
         heading.textContent = '';
         body.textContent = '';
-        list.replaceChildren();
+        list.innerHTML = '';
 
         heading.textContent = selObj.title;
         body.textContent = selObj.body;
@@ -56,16 +44,9 @@ function attachEvents() {
         }
    };  
    async function getPostInfo(k) {    
-    let result = await fetch(BASE_URL+'posts')
-        .then( res =>{
-            if (!res.ok){throw(res.status)}
-            return res.json();
-        })  
-        .catch(e=>{
-            console.log(`Error ${e.status}: ${e.message}`)
-        });
-        let data = Object.values(result);
-        
+        let result = await fetch(BASE_URL+'posts')
+        let res = await result.json();
+        let data = Object.values(res);        
         let obj = data.find((x=>x.id === k));            
         return obj;   
     }

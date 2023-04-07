@@ -28,8 +28,8 @@ async function lockedProfile() {
           generateElement('hr','',newDiv);
           generateElement('label','Username', newDiv);
           generateElement('input','', newDiv,'','',{type:'text', name:`user${userN}Username`, value: profile.username, disabled: '', readonly: ''});
-          let userInfo = generateElement('div', '', newDiv, `user${userN}HiddenFields`, '');
-          userInfo.style.display = 'none'
+          let userInfo = generateElement('div', '', newDiv, `user${userN}HiddenFields`, '', {style: 'display:none'});
+          //userInfo.style.display = 'none'
           generateElement('hr','',userInfo);
           generateElement('label','Email', userInfo);
           generateElement('input','', userInfo,'','',{type:'email', name:`user${userN}Email`, value: profile.email, disabled: '', readonly: ''});
@@ -58,12 +58,13 @@ async function lockedProfile() {
 
     function generateElement(type, content, parentNode, id, classes, attributes) {
         const element = document.createElement(type);
-        if (content && type === 'input') {
+        if (content) {
+            if (type === 'input'|| type === 'textarea') {
           element.value = content;
-        } 
-        if (content && type !== 'input') {
+            } else {
           element.textContent = content;
-        }
+            }
+        }   
         if (id) {
           element.id = id;
         }
