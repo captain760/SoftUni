@@ -1,0 +1,33 @@
+body {
+    background-color: rgba(18, 69, 163, 0.822);
+}
+
+textarea{
+    margin-top: 30px;
+    display: block;
+    background-color: rgb(29, 106, 129);
+    width: 260px;
+    height: 100px;
+    font-weight: bold;
+    font-size: 42px;
+    border-radius: 15%;
+    color: rgb(21, 36, 85);
+}
+
+button{
+    color: rgb(247, 232, 25);
+    background-color: rgb(32, 165, 72);
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+input{
+    height: 50px;
+    width: 100px;
+    border-radius: 10%;
+    box-shadow: (2,2,8,rgb(16, 34, 66));
+    font-size: 42px;
+}

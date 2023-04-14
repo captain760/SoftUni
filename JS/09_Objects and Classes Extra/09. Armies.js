@@ -1,36 +1,59 @@
 function solve(input) {
-    let leaders = [];
+    let leaders = {};
     for (const line of input) {
-        let leader = {};
+       
         let lineArr = line.split(" ");
         let last = lineArr.pop();
         if( last === "arrives"){
-            leader.ime = lineArr.join(" ");
-            leaders.push(leader)
+            let ime = lineArr.join(" ");
+            leaders[ime] = {};
+            leaders[ime].total = 0;
+            
         }else if(last === "defeated"){
-            leader.ime = lineArr.join(" ");
-            let index = leaders.indexOf(leaders.find((x)=>x.ime===leader.ime));
-            leaders.splice(index,1,0);
+            let ime = lineArr.join(" ");
+            
+            if (leaders.hasOwnProperty(ime)){
+            delete leaders[ime]}
+
         }
         if (line.split(": ").length>1){
             let lineArr1 = line.split(": ");
             let leadIme = lineArr1.shift();
             let armyName = lineArr1[0].split(", ")[0];
-            if(leaders.find((x)=>x.ime===leadIme)){
-                leaders[leaders.indexOf(leaders.find((x)=>x.ime===leadIme))].army = armyName;
-                leaders[leaders.indexOf(leaders.find((x)=>x.ime===leadIme))].count = +lineArr1[0].split(", ")[1];
+            let count = Number(lineArr1[0].split(", ")[1]);
+            if(leaders.hasOwnProperty(leadIme)){
+                leaders[leadIme][armyName] =  count;               
+                leaders[leadIme].total += count;                
             }
         }
         if (line.split(" + ").length>1){
             let lineArr2 = line.split(" + ");
             let armyName= lineArr2[0];
-            let armyCount= +lineArr2[1];
-            if (leaders.find((x)=>x.army===armyName)){
-                leaders[leaders.indexOf(leaders.find((x)=>x.army===armyName))].count += armyCount;
+            let armyCount= Number(lineArr2[1]);
+            
+            for (const armies of Object.values(leaders)) {
+                if(armies.hasOwnProperty(armyName)){
+                    armies[armyName]+=armyCount;
+                    armies.total+=armyCount;
+                }
             }
         }
     }
-    console.log(leaders)
+    let leadersArr = Object.entries(leaders)
+    let sorted = leadersArr.sort((a,b)=>{
+       return b[1].total-a[1].total});
+    for (const [key,value] of sorted) {       
+        console.log(`${key}: ${value.total}`);
+        let armiesArr = Object.entries(value);
+        armiesArr.sort((a,b)=>{
+            return b[1]-a[1];
+        })
+        armiesArr.shift();
+        for (const [armyName, count] of armiesArr) {
+            console.log(`>>> ${armyName} - ${count}`);
+        }
+        
+    }
 }
 
 solve(['Rick Burr arrives', 'Fergus: Wexamp, 30245', 'Rick Burr: Juard, 50000', 'Findlay arrives', 'Findlay: Britox, 34540', 'Wexamp + 6000', 'Juard + 1350', 'Britox + 4500', 'Porter arrives', 'Porter: Legion, 55000', 'Legion + 302', 'Rick Burr defeated', 'Porter: Retix, 3205'])

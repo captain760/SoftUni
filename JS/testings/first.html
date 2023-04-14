@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <input id = 'first' type="text">
+    <button>Sum</button>
+    <input id = 'second' type="text">
+    <textarea id = 'div'></textarea>
+</body>
+<script >
+    function solve() {
+        let arr = [];
+        let output = ''
+   const firstInp = document.getElementById('first'); 
+   const secondtInp = document.getElementById('second'); 
+   const div = document.getElementById('div'); 
+   const btn = document.getElementsByTagName('button')[0];
+   btn.addEventListener('click', sum);
+
+   function sum() {
+    div.textContent = ''
+    
+    let s = firstInp.value + secondtInp.value;
+    arr.push(s);
+    output+=s +'\n';
+for (const iterator of arr) {
+    div.textContent = output;
+}
+   }
+}
+solve()
+</script>
+</html>
