@@ -22,7 +22,7 @@ function solve() {
      if (e) {
          e.preventDefault();
      }
- console.log(fn.value, ln.value, din.value, dout.value, pc.value);
+
      if(fn.value == ''
      || ln.value == ''
      || din.value == ''
