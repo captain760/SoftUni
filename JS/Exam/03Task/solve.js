@@ -133,4 +133,5 @@ function generateElement(type, content, parentNode, id, classes, attributes) {
     }
     return element;
   }
+  
 attachEvents();
