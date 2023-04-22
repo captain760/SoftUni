@@ -100,8 +100,7 @@ function attachEvents() {
       await fetch(BASE_URL, handler);
 
       addTitle.value = '';
-      addDescr.value = '';
-      
+      addDescr.value = '';      
       loadAll();
  }
 
